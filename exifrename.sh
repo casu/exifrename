@@ -1,5 +1,9 @@
 #!/bin/bash
 
+#Samsung JPGS contain spaces. Change IFS
+IFS="
+"
+
 if [ $# -eq 0 -o "$1" == "-help" -o "$1" == "-h" ]
 then
   echo ""
